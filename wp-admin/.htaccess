@@ -1,0 +1,5 @@
+﻿RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REMOTE_ADDR} !127.0.0.1
+RewriteCond %{REMOTE_ADDR} !xxx.xxx.xxx.xxx # IP Server
+RewriteCond %{REMOTE_ADDR} !xxx.xxx.xxx.xxx # IP Me.
+RewriteRule ^ / [F]
